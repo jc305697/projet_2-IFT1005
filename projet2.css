@@ -1,2 +1,22 @@
 /* Jeremy Coulombe et Lydia Charchar*/
+.colonne{
+	float: left;
+	width: 10%;
+}
+
+.colonne ul{
+	list-style-type: none; 
+}
+
+.colonne a{
+	text-decoration:none;
+}
+
+.colonne li{
+	text-align: center;
+	border: 2px solid black;
+	margin-right: 10%;
+	margin-top: 6%;
+	margin-bottom: 6%;
+}
 
