@@ -17,7 +17,9 @@ h1{
 .imgProduit figcaption{
 	text-align: center;
 }
-
+.corps{
+	background-color: #C5E3FB;
+}
 .colonne{
 	/*float: left;
 	width: 10%;*/
