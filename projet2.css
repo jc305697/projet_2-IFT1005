@@ -3,7 +3,9 @@
 		box-sizing: border-box;   
 	}      
 
-
+html{
+	background-color: #FFFFFF; 
+}
 h1{
 	background-color: #79C1FF;
 	/*background-image: url("vagues.jpg");
@@ -19,6 +21,9 @@ h1{
 }
 .corps{
 	background-color: #C5E3FB;
+	width: 90%;
+	margin: auto;
+	min-height: 100vh;
 }
 .colonne{
 	/*float: left;
