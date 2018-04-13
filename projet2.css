@@ -5,7 +5,7 @@
 
 html{
 	background-color: #FFFFFF; 
-	background-image: url("surf_ocean_morning_76603_1680x1050.jpg");
+	background-image: url("surffff.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -24,6 +24,7 @@ h1{
 }
 .corps{
 	background-color: #C5E3FB;
+	opacity: 0.85;
 	width: 90%;
 	margin: auto;
 	min-height: 100vh;
