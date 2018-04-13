@@ -5,6 +5,9 @@
 
 html{
 	background-color: #FFFFFF; 
+	background-image: url("surf_ocean_morning_76603_1680x1050.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 h1{
 	background-color: #79C1FF;
