@@ -5,16 +5,24 @@
 
 html{
 	background-color: #FFFFFF; 
-	background-image: url("surffff.jpg");
+	/*background-image: url("plage.jpg");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover;*/
 }
+
 h1{
 	background-color: #79C1FF;
 	/*background-image: url("vagues.jpg");
 	background-repeat: no-repeat;*/
 }
+h1,.contenu,.colonne{
+	width: 97%;
+	margin: auto;
+}
 
+.contenu h2{
+	margin-top: 0;
+}
 .imgProduit{
 	float: left;
 }
@@ -22,11 +30,9 @@ h1{
 .imgProduit figcaption{
 	text-align: center;
 }
-.corps{
+.contenu{
 	background-color: #C5E3FB;
-	opacity: 0.85;
-	width: 90%;
-	margin: auto;
+	opacity: 0.9;
 	min-height: 100vh;
 }
 .colonne{
@@ -35,10 +41,11 @@ h1{
 	background-color: #0044AA;
 	/*min-height: 100vh;*/
 	padding: 2%;
+	margin-bottom: 0;
 }
 
 .contenu{
-	width: 90%;
+	/*width: 90%;*/
 	/*float: right;*/
 	/*background-color: #0ca4ff;*/
 	padding-left: 1%;
@@ -91,5 +98,20 @@ h1{
 	background-color: #FFFFFF;
 }
 
+html{
+	/*  code vient de https://stackoverflow.com/questions/21036880/how-to-set-the-background-image-fit-to-browser-using-html*/
+	background-image: url("plage.jpg");
+	/*height: 100%;*/
+	/*min-height: 100vh;
+	width: 100%;
+	height: auto;
+	position: fixed;*/
+	/*background-position: center;*/
+	background-position: top center; 
+	/*position: fixed;*/
+	background-repeat: no-repeat;
+	background-size: cover; 
+	background-attachment: fixed;
+}
 
 
