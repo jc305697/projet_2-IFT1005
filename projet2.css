@@ -97,6 +97,17 @@ h1,.contenu,.colonne{
 	padding: 0.80%;
 	background-color: #FFFFFF;
 }
+.contenu table,th,td{
+	text-align: left;
+	padding: 2%;
+	/*padding-right: 5%;*/
+	border-style: solid;
+	border-color: black;
+	border-collapse: collapse; 
+}
+.contenu table{
+	margin: auto;
+}
 
 html{
 	/*  code vient de https://stackoverflow.com/questions/21036880/how-to-set-the-background-image-fit-to-browser-using-html*/
