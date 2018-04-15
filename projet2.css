@@ -15,17 +15,12 @@ h1{
 	/*background-image: url("vagues.jpg");
 	background-repeat: no-repeat;*/
 }
-h1,.contenu,.colonne{
-	width: 97%;
-	margin: auto;
-}
+
 
 .contenu h2{
 	margin-top: 0;
 }
-.imgProduit{
-	float: left;
-}
+
 
 .imgProduit figcaption{
 	text-align: center;
@@ -76,27 +71,7 @@ h1,.contenu,.colonne{
 	margin: auto;
 }
 
-.colonne ul{
-	list-style-type: none; 
-	/*margin-top: 45%;*/
-	display: inline;
 
-}
-
-.colonne a{
-	text-decoration:none;
-}
-
-.colonne li{
-	display: inline;
-	text-align: center;
-	border: 2px solid black;
-	margin-right: 2%;
-	margin-top: 1%;
-	margin-bottom: 1%;
-	padding: 0.80%;
-	background-color: #FFFFFF;
-}
 .contenu table,th,td{
 	text-align: left;
 	padding: 2%;
@@ -109,20 +84,195 @@ h1,.contenu,.colonne{
 	margin: auto;
 }
 
-html{
-	/*  code vient de https://stackoverflow.com/questions/21036880/how-to-set-the-background-image-fit-to-browser-using-html*/
-	background-image: url("plage.jpg");
-	/*height: 100%;*/
-	/*min-height: 100vh;
-	width: 100%;
-	height: auto;
-	position: fixed;*/
-	/*background-position: center;*/
-	background-position: top center; 
-	/*position: fixed;*/
-	background-repeat: no-repeat;
-	background-size: cover; 
-	background-attachment: fixed;
+footer{
+	background-color: #79C1FF;
+	opacity: .9;
+}
+
+@media only screen and (min-width: 1025px) {
+	html{
+		/*  code vient de https://stackoverflow.com/questions/21036880/how-to-set-the-background-image-fit-to-browser-using-html*/
+		background-image: url("plage.jpg");
+		/*height: 100%;*/
+		/*min-height: 100vh;
+		width: 100%;
+		height: auto;
+		position: fixed;*/
+		/*background-position: center;*/
+		background-position: top center; 
+		/*position: fixed;*/
+		background-repeat: no-repeat;
+		background-size: cover; 
+		background-attachment: fixed;
+	}
+	.contenuFooter{
+		display: flex;
+		flex-direction: row;
+		/*margin: auto;*/
+	}
+
+	.contenu,.colonne,h1{
+		/*width: 87%;*/
+
+	}
+
+	.contenu{
+		flex: 7;
+	}
+	
+	footer{
+		/*float: right;
+		width: 10%;*/
+		
+		flex: 2;
+		padding-left: 1.5%;
+		/*display: inline;*/
+
+	}
+
+	footer ul{
+		list-style-type: none; 
+		padding-left: 0%;
+	}
+	h1{
+		margin-bottom: 0;
+	}
+	/*
+	.contenu,.colonne{
+		width: 90%;
+	}*/
+	.colonne ul{
+		list-style-type: none; 
+		/*margin-top: 45%;*/
+		display: inline;
+
+	}
+
+	.colonne a{
+		text-decoration:none;
+	}
+
+	.colonne li{
+		display: inline;
+		text-align: center;
+		border: 2px solid black;
+		margin-right: 2%;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		padding: 0.80%;
+		background-color: #FFFFFF;
+	}
+	.imgProduit{
+		float: left;
+	}
+
+
+}
+
+@media only screen and (min-width: 769px)  and (max-width: 1024px){ 
+	html{
+		/*  code vient de https://stackoverflow.com/questions/21036880/how-to-set-the-background-image-fit-to-browser-using-html*/
+		background-image: url("plage.jpg");
+		/*height: 100%;*/
+		/*min-height: 100vh;
+		width: 100%;
+		height: auto;
+		position: fixed;*/
+		/*background-position: center;*/
+		background-position: top center; 
+		/*position: fixed;*/
+		background-repeat: no-repeat;
+		background-size: cover; 
+		background-attachment: fixed;
+	}
+
+	h1,.contenu,.colonne{
+	width: 97%;
+	margin: auto;
+	}
+	.colonne ul{
+		list-style-type: none; 
+		/*margin-top: 45%;*/
+		display: inline;
+
+	}
+
+	.colonne a{
+		text-decoration:none;
+	}
+
+	.colonne li{
+		display: inline;
+		text-align: center;
+		border: 2px solid black;
+		margin-right: 2%;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		padding: 0.80%;
+		background-color: #FFFFFF;
+	}
+	.imgProduit{
+		float: left;
+	}
+	img{
+		max-width: 100%;
+	}
+
+	.contenu{
+		margin-bottom: 0;
+	}
+	footer{
+		margin-top: 0;
+	}
+
+}
+
+@media only screen and (max-width: 768px){
+	h1,.contenu,.colonne{
+		width: 97%;
+		margin: auto;
+	}
+
+	.colonne ul{
+		list-style-type: none; 
+		/*margin-top: 45%;*/
+		display: inline;
+
+	}
+
+	.colonne a{
+		text-decoration:none;
+	}
+
+	.colonne li{
+		display: block;
+		text-align: center;
+		border: 2px solid black;
+		margin-right: 2%;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		padding: 0.80%;
+		background-color: #FFFFFF;
+	}
+
+	
+	img{
+		max-width: 100%;
+	}
+
+	.contenu{
+		margin-bottom: 0;
+	}
+	footer{
+		margin-top: 0;
+	}
+
+	#surfeur{
+		display: none;
+	}
+
+
+
 }
 
 
