@@ -5,6 +5,7 @@
 
 html{
 	background-color: #FFFFFF; 
+	font-family:  Verdana, Arial,sans-serif;
 	/*background-image: url("plage.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;*/
@@ -16,9 +17,6 @@ h1{
 	background-repeat: no-repeat;*/
 }
 
-p{
-	font-family:  Verdana, Arial,sans-serif;
-}
 #copyright{
 	font-size: 0.8em ;
 }
