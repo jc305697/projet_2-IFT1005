@@ -285,15 +285,6 @@ footer{
 
 @media only screen and (max-width: 768px){
 
-	html{
-		/*  code vient de https://stackoverflow.com/questions/21036880/how-to-set-the-background-image-fit-to-browser-using-html*/
-		background-image: url("plage-min.jpg");
-		background-position: top center; 
-		background-repeat: no-repeat;
-		background-size: cover; 
-		background-attachment: fixed;
-	}
-	
 	h1,.contenu,.colonne,footer{
 		width: 97%;
 		margin: auto;
