@@ -14,9 +14,10 @@ html{
 p{
 	padding:  1% 2%;
 }
-
+/*https://stackoverflow.com/questions/787839/resize-image-proportionally-with-css*/
 img{
 	max-width: 100%;
+	height: auto;
 }
 
 h1{
@@ -107,7 +108,9 @@ fait en sorte que le figcaption reste en dessous de l'image lorsque elle est red
 .contenu table{
 	margin: auto;
 }
-
+.colonne a{
+		text-decoration:none;
+	}
 .colonne li{
 		text-align: center;
 		border: 2px solid black;
@@ -173,10 +176,6 @@ footer{
 		display: inline;
 	}
 
-	.colonne a{
-		text-decoration:none;
-	}
-
 	.colonne li{
 		display: inline;
 		margin-right: 2%;
@@ -237,20 +236,12 @@ footer{
 		display: inline;
 	}
 
-	.colonne a{
-		text-decoration:none;
-	}
-
 	.colonne li{
 		display: inline;
 		margin-right: 2%;
 		margin-top: 1%;
 		margin-bottom: 1%;
 		padding: 0.80%;
-	}
-	
-	img{
-		max-width: 100%;
 	}
 
 	.contenu{
@@ -305,11 +296,7 @@ footer{
 		display: inline;
 
 	}
-
-	.colonne a{
-		text-decoration:none;
-	}
-
+	
 	.colonne li{
 		display: block;
 		text-align: center;
