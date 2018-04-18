@@ -15,10 +15,12 @@ p{
 	padding:  1% 2%;
 }
 
+img{
+	max-width: 100%;
+}
+
 h1{
 	background-color: #79C1FF;
-	/*background-image: url("vagues.jpg");
-	background-repeat: no-repeat;*/
 }
 
 #copyright{
@@ -30,12 +32,10 @@ h1{
 }
 
 
-.imgProduit figcaption{
-	text-align: center;
-}
+
 .contenu{
 	background-color: #C5E3FB;
-	opacity: 0.9;
+	opacity: 0.98;
 	min-height: 100vh;
 }
 .colonne{
@@ -55,6 +55,11 @@ h1{
 	background-color: #C5E3FB;
 }
 
+/*.flexPage{
+	display: flex;
+	flex-direction: column;
+}*/
+
 #bouton{
 	margin-left: 4.45%;
 }
@@ -64,11 +69,11 @@ h1{
 	clear: both;
 }
 
-#planche1,#planche2{
+/*#planche1,#planche2{
 	margin-left: 2%;
 	margin-right: 2%;
 	margin-bottom: 2%;
-}
+}*/
 
 #vente{
 	margin-top: 10%;
@@ -78,8 +83,19 @@ h1{
 	display: block;
 	margin: auto;
 }
+/*
+https://stackoverflow.com/questions/6534473/how-can-i-make-the-width-of-my-figcaption-match-the-width-of-the-img-inside
+fait en sorte que le figcaption reste en dessous de l'image lorsque elle est redimensionner selon la taille de l'ecran
+*/
+.imgProduit{
+	display: table;
+}
 
-
+.imgProduit figcaption{
+	display: table-caption;
+	caption-side: bottom;
+	text-align: center;
+}
 .contenu table,th,td{
 	text-align: left;
 	padding: 2%;
@@ -92,23 +108,31 @@ h1{
 	margin: auto;
 }
 
+.colonne li{
+		text-align: center;
+		border: 2px solid black;
+		background-color: #FFFFFF;
+		font-weight: bold;
+}
+.colonne li:hover{
+	background-color: #000000;		
+}
+
+.colonne li:hover a{
+	color: #FFFFFF;
+}
+
 footer{
 	background-color: #79C1FF;
-	opacity: .9;
+	opacity: .96;
 }
+
 
 @media only screen and (min-width: 1025px) {
 	html{
 		/*  code vient de https://stackoverflow.com/questions/21036880/how-to-set-the-background-image-fit-to-browser-using-html*/
 		background-image: url("plage.jpg");
-		/*height: 100%;*/
-		/*min-height: 100vh;
-		width: 100%;
-		height: auto;
-		position: fixed;*/
-		/*background-position: center;*/
 		background-position: top center; 
-		/*position: fixed;*/
 		background-repeat: no-repeat;
 		background-size: cover; 
 		background-attachment: fixed;
@@ -116,44 +140,37 @@ footer{
 	.contenuFooter{
 		display: flex;
 		flex-direction: row;
-		/*margin: auto;*/
+	}
+	.contenu,.colonne{
+		min-width: 0;
 	}
 
 	.contenu,.colonne,h1{
 		/*width: 87%;*/
-
 	}
 
 	.contenu{
 		flex: 7;
 	}
 	
-	footer{
-		/*float: right;
-		width: 10%;*/
-		
+	footer{		
 		flex: 2;
 		padding-left: 1.5%;
-		/*display: inline;*/
-
 	}
 
 	footer ul{
 		list-style-type: none; 
 		padding-left: 0%;
 	}
+
 	h1{
 		margin-bottom: 0;
 	}
-	/*
-	.contenu,.colonne{
-		width: 90%;
-	}*/
+	
 	.colonne ul{
 		list-style-type: none; 
 		/*margin-top: 45%;*/
 		display: inline;
-
 	}
 
 	.colonne a{
@@ -162,18 +179,10 @@ footer{
 
 	.colonne li{
 		display: inline;
-		text-align: center;
-		border: 2px solid black;
 		margin-right: 2%;
 		margin-top: 1%;
 		margin-bottom: 1%;
 		padding: 0.80%;
-		background-color: #FFFFFF;
-	}
-	
-	.imgProduit{
-		float: left;
-
 	}
 
 	#maillot1{
@@ -189,6 +198,13 @@ footer{
 	#contact{
 		display: flex;
 		flex-direction: column;
+	}
+	/* https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
+	*/
+	#location,#plancheFlex,#cireFlex,#courroieFlex,#maillotFlex{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
 	}
 
 
@@ -219,7 +235,6 @@ footer{
 		list-style-type: none; 
 		/*margin-top: 45%;*/
 		display: inline;
-
 	}
 
 	.colonne a{
@@ -228,13 +243,10 @@ footer{
 
 	.colonne li{
 		display: inline;
-		text-align: center;
-		border: 2px solid black;
 		margin-right: 2%;
 		margin-top: 1%;
 		margin-bottom: 1%;
 		padding: 0.80%;
-		background-color: #FFFFFF;
 	}
 	
 	img{
@@ -253,24 +265,11 @@ footer{
 		list-style-type: none; 
 		padding-left: 0%;
 	}
+
 	#copyright{
 		text-align: center;
 	}
 
-	.imgProduit{
-		float: left;
-
-	}
-
-	#maillot1{
-		float: none;
-		/*min-height: 100%;*/
-	}
-
-	#maillot2{
-		float: none;
-		/*min-height: 10%;*/
-	}
 	#contact{
 		display: flex;
 		flex-direction: row;
@@ -283,6 +282,13 @@ footer{
 	.element{
 		margin-right: 2%;
 		margin-left: 2%;
+	}
+	/* https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
+	*/
+	#location,#plancheFlex,#cireFlex,#courroieFlex,#maillotFlex{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
 	}
 
 }
@@ -315,11 +321,6 @@ footer{
 		background-color: #FFFFFF;
 	}
 
-	
-	img{
-		max-width: 100%;
-	}
-
 	.contenu{
 		margin-bottom: 0;
 	}
@@ -343,21 +344,6 @@ footer{
 		flex-direction: column;
 	}
 
-	.imgProduit{
-		float: left;
-
-	}
-
-	#maillot1{
-		float: none;
-		/*min-height: 100%;*/
-	}
-
-	#maillot2{
-		float: none;
-		/*min-height: 10%;*/
-	}
-
 	.ligne{
 		display: none;
 	}
@@ -367,8 +353,11 @@ footer{
 		margin-bottom: 2%;
 	}
 
-
-
+	#location,#plancheFlex,#cireFlex,#courroieFlex,#maillotFlex{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+	}
 
 }
 
