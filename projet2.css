@@ -4,7 +4,8 @@
 	}      
 
 html{
-	background-color: #FFFFFF; 
+	/*background-color: #5781C9; */
+	background-color: #1D426C; 
 	font-family:  Verdana, Arial,sans-serif;
 	/*background-image: url("plage.jpg");
 	background-repeat: no-repeat;
@@ -62,7 +63,7 @@ h1{
 }*/
 
 #bouton{
-	margin-left: 4.45%;
+	margin-left: 11%;
 }
 
 #mainProduit h3,h4{
@@ -310,9 +311,13 @@ footer{
 
 	.contenu{
 		margin-bottom: 0;
+		padding-left: 3%;
+		opacity: 1;
 	}
+
 	footer{
 		margin-top: 0;
+		padding-left: 3%;
 	}
 
 	#surfeur{
@@ -339,8 +344,18 @@ footer{
 		margin-top: 2%;
 		margin-bottom: 2%;
 	}
-
-	#location,#plancheFlex,#cireFlex,#courroieFlex,#maillotFlex{
+	
+	#location {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	#location div img{
+		margin-top: 2%;
+		margin-bottom: 2%; 
+		margin-left: 6.5%;
+	}
+	#plancheFlex,#cireFlex,#courroieFlex,#maillotFlex{
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
