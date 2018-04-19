@@ -48,9 +48,6 @@ h1{
 }
 
 .contenu{
-	/*width: 90%;*/
-	/*float: right;*/
-	/*background-color: #0ca4ff;*/
 	padding-left: 1%;
 	background-color: #C5E3FB;
 }
@@ -84,8 +81,8 @@ h1{
 	margin: auto;
 }
 /*
-https://stackoverflow.com/questions/6534473/how-can-i-make-the-width-of-my-figcaption-match-the-width-of-the-img-inside
-fait en sorte que le figcaption reste en dessous de l'image lorsque elle est redimensionner selon la taille de l'ecran
+	https://stackoverflow.com/questions/6534473/how-can-i-make-the-width-of-my-figcaption-match-the-width-of-the-img-inside
+	fait en sorte que le figcaption reste en dessous de l'image lorsque elle est redimensionner selon la taille de l'ecran
 */
 .imgProduit{
 	display: table;
@@ -128,6 +125,19 @@ footer{
 	background-color: #79C1FF;
 	opacity: .96;
 }
+
+#location,#plancheFlex,#cireFlex,#courroieFlex,#maillotFlex{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+.colonne li{
+		display: inline;
+		margin-right: 2%;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		padding: 0.80%;
+	}	
 
 
 @media only screen and (min-width: 1025px) {
@@ -175,13 +185,6 @@ footer{
 		display: inline;
 	}
 
-	.colonne li{
-		display: inline;
-		margin-right: 2%;
-		margin-top: 1%;
-		margin-bottom: 1%;
-		padding: 0.80%;
-	}
 
 	#maillot1{
 		float: none;
@@ -199,27 +202,14 @@ footer{
 	}
 	/* https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
 	*/
-	#location,#plancheFlex,#cireFlex,#courroieFlex,#maillotFlex{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-	}
-
-
+	
 }
 
 @media only screen and (min-width: 769px)  and (max-width: 1024px){ 
 	html{
 		/*  code vient de https://stackoverflow.com/questions/21036880/how-to-set-the-background-image-fit-to-browser-using-html*/
 		background-image: url("plage-min.jpg");
-		/*height: 100%;*/
-		/*min-height: 100vh;
-		width: 100%;
-		height: auto;
-		position: fixed;*/
-		/*background-position: center;*/
 		background-position: top center; 
-		/*position: fixed;*/
 		background-repeat: no-repeat;
 		background-size: cover; 
 		background-attachment: fixed;
@@ -231,17 +221,10 @@ footer{
 	}
 	.colonne ul{
 		list-style-type: none; 
-		/*margin-top: 45%;*/
 		display: inline;
 	}
 
-	.colonne li{
-		display: inline;
-		margin-right: 2%;
-		margin-top: 1%;
-		margin-bottom: 1%;
-		padding: 0.80%;
-	}
+	
 
 	.contenu{
 		margin-bottom: 0;
@@ -275,11 +258,7 @@ footer{
 	}
 	/* https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
 	*/
-	#location,#plancheFlex,#cireFlex,#courroieFlex,#maillotFlex{
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-	}
+	
 
 }
 
