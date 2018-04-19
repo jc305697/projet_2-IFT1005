@@ -129,7 +129,7 @@ footer{
 #location,#plancheFlex,#cireFlex,#courroieFlex,#maillotFlex{
 		display: flex;
 		flex-direction: row;
-		justify-content: space-evenly;
+		justify-content: space-around;
 	}
 .colonne li{
 		display: inline;
@@ -336,7 +336,7 @@ footer{
 	#plancheFlex,#cireFlex,#courroieFlex,#maillotFlex{
 		display: flex;
 		flex-direction: column;
-		justify-content: space-evenly;
+		justify-content: space-around;
 	}
 
 }
